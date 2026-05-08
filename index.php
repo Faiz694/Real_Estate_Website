@@ -7,8 +7,30 @@
 </head>
 <body>
 
-<header>
-    <h1>Dream Properties</h1>
+<header class="header">
+
+    <div class="container header-container">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.php">Dream Properties</a>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+
+            <a href="index.php" class="active">Home</a>
+
+            <a href="properties.php">Properties</a>
+
+            <a href="about.php">About</a>
+
+            <a href="contact.php">Contact</a>
+
+        </nav>
+
+    </div>
+
 </header>
 
 <section class="hero">

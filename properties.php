@@ -76,7 +76,7 @@ $result = $stmt->get_result();
             font-family: Arial, Helvetica, sans-serif;
             background:#f4f6f9;
             color:#222;
-            padding:40px 20px;
+            /* padding:40px 20px; */
         }
 
         .container{
@@ -224,11 +224,6 @@ $result = $stmt->get_result();
         */
 
         @media(max-width:768px){
-
-            body{
-                padding:20px 15px;
-            }
-
             h1{
                 font-size:2rem;
             }
@@ -245,11 +240,143 @@ $result = $stmt->get_result();
                 padding:20px;
             }
         }
+        /* =========================================
+   HEADER / NAVBAR
+========================================= */
 
+.header {
+    width: 100%;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo a {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e3a8a;
+    letter-spacing: 0.5px;
+}
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    padding: 5px 0;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar a:hover {
+    color: #1e3a8a;
+}
+
+/* Active Link */
+.navbar .active {
+    color: #1e3a8a;
+}
+
+/* Underline Animation */
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #1e3a8a;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover::after,
+.navbar .active::after {
+    width: 100%;
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .logo a {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        font-size: 15px;
+    }
+}
     </style>
 </head>
 
 <body>
+    <header class="header">
+
+    <div class="container header-container">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.php">Dream Properties</a>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+
+            <a href="index.php" >Home</a>
+
+            <a href="properties.php" class="active">Properties</a>
+
+            <a href="about.php">About</a>
+
+            <a href="contact.php">Contact</a>
+
+        </nav>
+
+    </div>
+
+</header>
 
 <div class="container">
 
