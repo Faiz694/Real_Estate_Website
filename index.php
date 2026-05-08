@@ -58,6 +58,9 @@
         }
     }
     ?></div>
+     <a href="properties.php" class="view-btn">
+        View All Properties
+    </a>
 </section>
 
 

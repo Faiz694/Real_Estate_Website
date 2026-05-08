@@ -2,7 +2,6 @@
 require_once 'config/db.php';
 
 /*
-|--------------------------------------------------------------------------
 | Validate Property ID
 |--------------------------------------------------------------------------
 */
@@ -190,7 +189,7 @@ $conn->close();
 
             transition:0.3s ease;
         }
-
+        
         .whatsapp{
             background:#25d366;
         }
@@ -198,7 +197,14 @@ $conn->close();
         .whatsapp:hover{
             background:#1ebe5d;
         }
-
+        
+        .contact{
+             background:#f5aaaa;
+        }
+        .contact:hover{
+            background: #f59999;
+        }
+        
         .call{
             background:#2563eb;
         }
@@ -298,7 +304,9 @@ $conn->close();
                 >
                     WhatsApp
                 </a>
-
+                <a  href="contact.php?property_id=3"
+                    class="btn contact"
+                > Enquiry </a>
                 <a
                     href="tel:XXXXXXXXXX"
                     class="btn call"

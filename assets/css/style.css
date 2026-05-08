@@ -45,7 +45,7 @@ h1 {
 
     background: linear-gradient(
         135deg,
-        rgb(245, 170, 170),
+        #f5aaaa,
         rgb(228, 164, 28),
         rgb(67, 207, 67)
     );
@@ -319,4 +319,31 @@ section h2 {
         font-size: 1.25rem;
         padding: 18px;
     }
+}
+
+.view-btn{
+
+    display:block;
+
+    width:max-content;
+
+    margin:40px auto 0;
+
+    padding:14px 28px;
+
+    background:#2563eb;
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:0.3s ease;
+}
+
+.view-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
 }
