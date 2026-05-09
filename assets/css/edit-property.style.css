@@ -1,0 +1,144 @@
+/* =========================================
+   RESET
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    padding: 40px 20px;
+    color: #333;
+}
+
+/* =========================================
+   PAGE CONTAINER
+========================================= */
+.page-container {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* =========================================
+   FORM CARD
+========================================= */
+.form-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-card h1 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   FORM GROUP
+========================================= */
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #f9fafb;
+    transition: 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+/* =========================================
+   PROPERTY IMAGE
+========================================= */
+.property-image {
+    width: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 1px solid #d1d5db;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+.submit-btn {
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #1d4ed8;
+}
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+.error-message {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #fecaca;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 600px) {
+
+    .form-card {
+        padding: 30px 20px;
+    }
+
+    .form-card h1 {
+        font-size: 26px;
+    }
+
+    .property-image {
+        width: 100%;
+    }
+}

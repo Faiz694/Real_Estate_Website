@@ -1,0 +1,209 @@
+/* =========================================
+   RESET
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    display: flex;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* =========================================
+   SIDEBAR
+========================================= */
+.sidebar {
+    width: 260px;
+    background: #111827;
+    color: white;
+    padding: 30px 20px;
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar-logo h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: #d1d5db;
+    padding: 14px 16px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu .active {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.logout-btn {
+    margin-top: 20px;
+    background: #dc2626;
+    color: white !important;
+}
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+.main-content {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    padding: 30px;
+}
+
+/* =========================================
+   TOPBAR
+========================================= */
+.topbar {
+    margin-bottom: 30px;
+}
+
+.topbar h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.topbar p {
+    color: #666;
+}
+
+/* =========================================
+   TABLE SECTION
+========================================= */
+.table-section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.table-header h2 {
+    font-size: 24px;
+    color: #111827;
+}
+
+.back-btn {
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #1d4ed8;
+}
+
+/* =========================================
+   TABLE
+========================================= */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background: #f3f4f6;
+}
+
+table th,
+table td {
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+    vertical-align: top;
+}
+
+table th {
+    color: #374151;
+    font-size: 15px;
+}
+
+table td {
+    font-size: 14px;
+    color: #555;
+}
+
+/* =========================================
+   MESSAGE CELL
+========================================= */
+.message-cell {
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+/* =========================================
+   EMPTY MESSAGE
+========================================= */
+.empty-message {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 900px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .table-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .topbar h1 {
+        font-size: 26px;
+    }
+}
